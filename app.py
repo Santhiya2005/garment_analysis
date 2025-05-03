@@ -36,6 +36,6 @@ def index():
         </html>
     ''', table=product_summary.to_html(index=False), pie_chart=pie_chart_html)
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
